@@ -8,14 +8,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class prog3 extends AppCompatActivity {
+public class prog03 extends AppCompatActivity {
     private EditText ed1,ed2;
     private Button btnsum,btnsub,btnmul,btndiv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_prog3);
+        setContentView(R.layout.activity_prog03);
 
         addListenerOnButton();
     }
@@ -32,10 +32,10 @@ public class prog3 extends AppCompatActivity {
             public void onClick(View view) {
                 String value1 = ed1.getText().toString();
                 String value2 = ed2.getText().toString();
-                int a = Integer.parseInt(value1);
-                int b = Integer.parseInt(value2);
-                int sum = a+b;
-                Toast.makeText(prog3.this,String.valueOf(sum), Toast.LENGTH_SHORT).show();
+                float a = Float.parseFloat(value1);
+                float b = Float.parseFloat(value2);
+                float sum = a+b;
+                Toast.makeText(prog03.this,String.valueOf(sum), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -44,10 +44,10 @@ public class prog3 extends AppCompatActivity {
             public void onClick(View view) {
                 String value1 = ed1.getText().toString();
                 String value2 = ed2.getText().toString();
-                int a = Integer.parseInt(value1);
-                int b = Integer.parseInt(value2);
-                int sub = a-b;
-                Toast.makeText(prog3.this,String.valueOf(sub), Toast.LENGTH_SHORT).show();
+                float a = Float.parseFloat(value1);
+                float b = Float.parseFloat(value2);
+                float sub = a-b;
+                Toast.makeText(prog03.this,String.valueOf(sub), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -56,10 +56,10 @@ public class prog3 extends AppCompatActivity {
             public void onClick(View view) {
                 String value1 = ed1.getText().toString();
                 String value2 = ed2.getText().toString();
-                int a = Integer.parseInt(value1);
-                int b = Integer.parseInt(value2);
-                int mul = a*b;
-                Toast.makeText(prog3.this,String.valueOf(mul), Toast.LENGTH_SHORT).show();
+                float a = Float.parseFloat(value1);
+                float b = Float.parseFloat(value2);
+                float mul = a*b;
+                Toast.makeText(prog03.this,String.valueOf(mul), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -68,10 +68,10 @@ public class prog3 extends AppCompatActivity {
             public void onClick(View view) {
                 String value1 = ed1.getText().toString();
                 String value2 = ed2.getText().toString();
-                int a = Integer.parseInt(value1);
-                int b = Integer.parseInt(value2);
-                int div = a/b;
-                Toast.makeText(prog3.this,String.valueOf(div), Toast.LENGTH_SHORT).show();
+                float a = Float.parseFloat(value1);
+                float b = Float.parseFloat(value2);
+                float div = a/b;
+                Toast.makeText(prog03.this,String.valueOf(div), Toast.LENGTH_SHORT).show();
             }
         });
     }

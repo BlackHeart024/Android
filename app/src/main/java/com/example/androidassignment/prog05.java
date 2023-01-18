@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-public class prog5 extends AppCompatActivity {
+public class prog05 extends AppCompatActivity {
     SeekBar seekbar;
     TextView tv;
 
@@ -15,7 +15,7 @@ public class prog5 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_prog5);
+        setContentView(R.layout.activity_prog05);
 
         tv = (TextView) findViewById(R.id.tv);
         seekbar = (SeekBar) findViewById(R.id.seekBar);

@@ -7,9 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class prog2 extends AppCompatActivity {
+public class prog02 extends AppCompatActivity {
     EditText ed1,ed2;
     Button btnmerge;
     TextView result;
@@ -17,7 +16,7 @@ public class prog2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_prog2);
+        setContentView(R.layout.activity_prog02);
 
         addListenerOnButton();
     }

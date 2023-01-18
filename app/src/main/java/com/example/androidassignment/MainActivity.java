@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn1,btn2,btn3,btn4,btn5;
+    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog1.class);
+                Intent i = new Intent(MainActivity.this, prog01.class);
                 startActivity(i);
             }
         });
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog2.class);
+                Intent i = new Intent(MainActivity.this, prog02.class);
                 startActivity(i);
             }
         });
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog3.class);
+                Intent i = new Intent(MainActivity.this, prog03.class);
                 startActivity(i);
             }
         });
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog4.class);
+                Intent i = new Intent(MainActivity.this, prog04.class);
                 startActivity(i);
             }
         });
@@ -55,7 +55,25 @@ public class MainActivity extends AppCompatActivity {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog5.class);
+                Intent i = new Intent(MainActivity.this, prog05.class);
+                startActivity(i);
+            }
+        });
+
+        btn6 = (Button) findViewById(R.id.prg6);
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, prog06.class);
+                startActivity(i);
+            }
+        });
+
+        btn7 = (Button) findViewById(R.id.prg7);
+        btn7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, prog07.class);
                 startActivity(i);
             }
         });

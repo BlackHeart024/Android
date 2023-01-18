@@ -4,37 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".prog04">
+    tools:context=".prog12">
 
     <TextView
-        android:id="@+id/ttv2"
+        android:id="@+id/textView11"
         android:layout_width="325dp"
         android:layout_height="60dp"
         android:layout_marginStart="43dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="43dp"
-        android:layout_marginBottom="197dp"
+        android:layout_marginBottom="181dp"
         android:gravity="center"
-        android:text="Program 4"
+        android:text="Program 12"
         android:textAlignment="center"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/c1"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/c1"
+        android:id="@+id/editTextNumber"
         android:layout_width="225dp"
         android:layout_height="50dp"
         android:layout_marginStart="43dp"
         android:layout_marginEnd="12dp"
-        android:layout_marginBottom="63dp"
+        android:layout_marginBottom="59dp"
         android:ems="10"
-        android:hint="Enter currency"
+        android:hint="Enter Tempeture"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/cursub"
+        app:layout_constraintBottom_toTopOf="@+id/con"
         app:layout_constraintEnd_toStartOf="@+id/cur"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -43,23 +42,22 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="63dp"
+        android:layout_marginBottom="59dp"
         android:text="Convert"
-        android:textOff="Rupee"
-        android:textOn="Dollar"
-        app:layout_constraintBottom_toTopOf="@+id/cursub"
+        android:textOff="F->C"
+        android:textOn="C->F"
+        app:layout_constraintBottom_toTopOf="@+id/con"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/cursub"
+        android:id="@+id/con"
         android:layout_width="125dp"
         android:layout_height="60dp"
         android:layout_marginStart="143dp"
         android:layout_marginEnd="143dp"
-        android:layout_marginBottom="251dp"
+        android:layout_marginBottom="271dp"
         android:text="Convert"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

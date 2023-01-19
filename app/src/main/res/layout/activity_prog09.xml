@@ -18,68 +18,78 @@
         android:text="Program 9"
         android:textAlignment="center"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="275dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginBottom="76dp"
-        android:gravity="center"
-        android:text="Chintan"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/san"
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="72dp"
+        android:ems="10"
+        android:hint="Enter Text"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button_font_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/san"
-        android:layout_width="125dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="27dp"
-        android:text="San serif"
-        app:layout_constraintBottom_toTopOf="@+id/bold"
-        app:layout_constraintEnd_toStartOf="@+id/arial"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/arial"
-        android:layout_width="125dp"
+        android:id="@+id/button_font_1"
+        android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="65dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="47dp"
         android:layout_marginBottom="25dp"
-        android:text="Arial"
-        app:layout_constraintBottom_toTopOf="@+id/italic"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/bold"
-        android:layout_width="125dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="227dp"
-        android:text="Bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/italic"
+        android:text="Font 1"
+        app:layout_constraintBottom_toTopOf="@+id/button_bold"
+        app:layout_constraintEnd_toStartOf="@+id/button_font_2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/italic"
-        android:layout_width="125dp"
+        android:id="@+id/button_font_2"
+        android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginBottom="227dp"
-        android:text="Italic"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="25dp"
+        android:text="Font 2"
+        app:layout_constraintBottom_toTopOf="@+id/button_italic"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_bold"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="32dp"
+        android:text="Bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_normal"
+        app:layout_constraintEnd_toStartOf="@+id/button_italic"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_italic"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="32dp"
+        android:text="Italic"
+        app:layout_constraintBottom_toTopOf="@+id/button_normal"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_normal"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="144dp"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

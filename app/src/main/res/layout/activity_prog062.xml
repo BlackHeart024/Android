@@ -4,77 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".prog06">
+    tools:context=".prog06_2">
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/textView18"
         android:layout_width="325dp"
         android:layout_height="75dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
         android:layout_marginRight="50dp"
-        android:layout_marginBottom="111dp"
+        android:layout_marginBottom="145dp"
         android:gravity="center"
         android:text="Program 6"
         android:textAlignment="center"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/edname"
+        app:layout_constraintBottom_toTopOf="@+id/rname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/edname"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="81dp"
-        android:layout_marginBottom="40dp"
-        android:ems="10"
-        android:hint="Enter Your Name"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edemail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/edemail"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="81dp"
-        android:layout_marginBottom="40dp"
-        android:ems="10"
-        android:hint="Enter Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/edpass"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/edpass"
+    <TextView
+        android:id="@+id/rname"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="81dp"
         android:layout_marginBottom="50dp"
-        android:ems="10"
-        android:hint="Enter Password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintBottom_toTopOf="@+id/remail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="100dp"
+    <TextView
+        android:id="@+id/remail"
+        android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginStart="155dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginBottom="160dp"
-        android:text="Submit"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/rpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/rpass"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="215dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".prog13">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="45dp"
+        android:gravity="center"
+        android:text="Program 13"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/toggleButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="25dp"
+        android:text="ToggleButton"
+        android:textOff="Simple Interest"
+        android:textOn="Compound Interest"
+        app:layout_constraintBottom_toTopOf="@+id/amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText android:layout_height="60dp" android:layout_width="260dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/roi" android:id="@+id/amount" app:layout_constraintHorizontal_bias="0.503" android:inputType="number" android:hint="Enter Amount" android:ems="10" android:layout_marginBottom="36dp"/>
+
+    <EditText android:layout_height="60dp" android:layout_width="260dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/tp" android:id="@+id/roi" app:layout_constraintHorizontal_bias="0.496" android:inputType="number" android:hint="Enter Rate of Interest" android:ems="10" android:layout_marginBottom="36dp"/>
+
+    <EditText android:layout_height="60dp" android:layout_width="260dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/bsi" android:id="@+id/tp" app:layout_constraintHorizontal_bias="0.502" android:inputType="number" android:hint="Enter Time Period" android:ems="10" android:layout_marginBottom="36dp"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:text="SI" android:id="@+id/bsi" app:layout_constraintHorizontal_bias="0.498" android:layout_marginBottom="164dp" app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".prog14">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="43dp"
+        android:gravity="center"
+        android:text="Program 14"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/len"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Enter Length"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/hei"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/hei"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Enter Height"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/rad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/rad"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="Enter Radius"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/sq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sq"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="20dp"
+        android:text="Square"
+        app:layout_constraintBottom_toTopOf="@+id/tri"
+        app:layout_constraintEnd_toStartOf="@+id/rec"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/rec"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:text="Rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/cir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rad"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/tri"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="116dp"
+        android:text="Triangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cir"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="116dp"
+        android:text="Circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tri" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

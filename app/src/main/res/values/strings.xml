@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Android Assignment</string>
+    <string name="app_name">Android</string>
+    <array name="choice">
+        <item>Select Your Choice</item>
+        <item>Assignment-I</item>
+        <item>Assignment-II</item>
+    </array>
+    <string name="dialog_message">Welcome To Alert Dialog</string>
+    <string name="dialog_title">T.Y.B.Sc. Computer Science Alert Dialog</string>
+    <array name="choice2">
+        <item>Select Your Country</item>
+        <item>India</item>
+        <item>USA</item>
+        <item>Australia</item>
+        <item>Japan</item>
+    </array>
+    <string name="autofill">Example showing AutoCompleteTextView</string>
 </resources>

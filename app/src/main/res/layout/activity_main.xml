@@ -6,129 +6,124 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="325dp"
-            android:layout_height="75dp"
-            android:layout_marginStart="48dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="48dp"
-            android:layout_marginBottom="75dp"
-            android:gravity="center"
-            android:text="Android Assignment"
-            android:textAlignment="center"
-            android:textSize="34sp"
-            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    <ScrollView
-        android:id="@+id/scrollView2"
+    <TextView
+        android:id="@+id/textView20"
         android:layout_width="325dp"
-        android:layout_height="500dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="56dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="103dp"
+        android:gravity="center"
+        android:text="Android Assignment"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Name: "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView23"
+        app:layout_constraintEnd_toStartOf="@+id/textView22"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="225dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Patel Chintan Kishorbhai"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Class: "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintEnd_toStartOf="@+id/textView24"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="T.Y.B.Sc.(CS)"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:text="Roll No.:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toStartOf="@+id/textView26"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:text="16"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="204dp"
+        android:entries="@array/choice"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/prg1"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 1" />
-
-            <Button
-                android:id="@+id/prg2"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 2" />
-
-            <Button
-                android:id="@+id/prg3"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 3" />
-
-            <Button
-                android:id="@+id/prg4"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 4" />
-
-            <Button
-                android:id="@+id/prg5"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 5" />
-
-            <Button
-                android:id="@+id/prg6"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 6" />
-
-            <Button
-                android:id="@+id/prg7"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 7" />
-
-            <Button
-                android:id="@+id/prg8"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 8" />
-
-            <Button
-                android:id="@+id/prg9"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 9" />
-
-            <Button
-                android:id="@+id/prg10"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 10" />
-
-            <Button
-                android:id="@+id/prg11"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 11" />
-
-            <Button
-                android:id="@+id/prg12"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 12" />
-
-            <Button
-                android:id="@+id/prg13"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 13" />
-
-            <Button
-                android:id="@+id/prg14"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 14" />
-
-            <Button
-                android:id="@+id/prg15"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:text="Program 15" />
-
-        </LinearLayout>
-    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,149 +5,44 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
-public class MainActivity extends AppCompatActivity {
-    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,btn12,btn13,btn14,btn15;
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+    String[] choice = {"Select your Choice","Assignment-I", "Assignment-II"};
+    int curitem = 0;
+    int curitem2 = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn1 = (Button) findViewById(R.id.prg1);
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog01.class);
-                startActivity(i);
-            }
-        });
+        Spinner spin = (Spinner) findViewById(R.id.spinner);
+        spin.setOnItemSelectedListener(this);
 
-        btn2 = (Button) findViewById(R.id.prg2);
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog02.class);
-                startActivity(i);
-            }
-        });
+        ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item, choice);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spin.setAdapter(aa);
+    }
 
-        btn3 = (Button) findViewById(R.id.prg3);
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog03.class);
-                startActivity(i);
-            }
-        });
+    @Override
+    public void onItemSelected(AdapterView<?> arg0,View arg1, int position, long id) {
+        if(curitem==position) {
+            return;
+        }
+        else if(curitem2==position) {
+            Intent i = new Intent(MainActivity.this, Assignment_1.class);
+            startActivity(i);
+        }
+        else{
+                Intent j = new Intent(MainActivity.this, Assignment_2.class);
+                startActivity(j);
+        }
+    }
 
-        btn4 = (Button) findViewById(R.id.prg4);
-        btn4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog04.class);
-                startActivity(i);
-            }
-        });
-
-        btn5 = (Button) findViewById(R.id.prg5);
-        btn5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog05.class);
-                startActivity(i);
-            }
-        });
-
-        btn6 = (Button) findViewById(R.id.prg6);
-        btn6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog06.class);
-                startActivity(i);
-            }
-        });
-
-        btn7 = (Button) findViewById(R.id.prg7);
-        btn7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog07.class);
-                startActivity(i);
-            }
-        });
-
-        btn8 = (Button) findViewById(R.id.prg8);
-        btn8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog08.class);
-                startActivity(i);
-            }
-        });
-
-        btn9 = (Button) findViewById(R.id.prg9);
-        btn9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog09.class);
-                startActivity(i);
-            }
-        });
-
-        btn10 = (Button) findViewById(R.id.prg10);
-        btn10.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog10.class);
-                startActivity(i);
-            }
-        });
-
-        btn11 = (Button) findViewById(R.id.prg11);
-        btn11.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog11.class);
-                startActivity(i);
-            }
-        });
-
-        btn12 = (Button) findViewById(R.id.prg12);
-        btn12.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog12.class);
-                startActivity(i);
-            }
-        });
-
-        btn13 = (Button) findViewById(R.id.prg13);
-        btn13.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog13.class);
-                startActivity(i);
-            }
-        });
-
-        btn14 = (Button) findViewById(R.id.prg14);
-        btn14.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog14.class);
-                startActivity(i);
-            }
-        });
-
-        btn15 = (Button) findViewById(R.id.prg15);
-        btn15.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, prog15.class);
-                startActivity(i);
-            }
-        });
+    @Override
+    public void onNothingSelected(AdapterView<?> arg0) {
     }
 }

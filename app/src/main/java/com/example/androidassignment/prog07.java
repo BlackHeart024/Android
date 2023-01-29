@@ -22,20 +22,20 @@ public class prog07 extends AppCompatActivity {
         picker = (DatePicker) findViewById(R.id.datePicker);
         displaydate = (Button) findViewById(R.id.cd);
 
-        tv.setText("Current Date: "+getCurrentDate());
+        tv.setText("Current Year: "+getCurrentDate());
 
         displaydate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv.setText("Change Date: "+getCurrentDate());
+                int cyear = 2023;
+                int byear = (picker.getYear());
+                int age = cyear-byear;
+                tv.setText("Your age is: "+age);
             }
         });
     }
-    public String getCurrentDate() {
-        StringBuilder builder = new StringBuilder();
-        builder.append(picker.getDayOfMonth() + "/");
-        builder.append((picker.getMonth() + 1) + "/");
-        builder.append(picker.getYear());
-        return builder.toString();
+    public Integer getCurrentDate() {
+        int curyear = (picker.getYear());
+        return curyear;
     }
 }

@@ -5,6 +5,11 @@
         <item>Assignment-I</item>
         <item>Assignment-II</item>
     </array>
+    <array name="itemList">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+    </array>
     <string name="dialog_message">Welcome To Alert Dialog</string>
     <string name="dialog_title">T.Y.B.Sc. Computer Science Alert Dialog</string>
     <array name="choice2">
